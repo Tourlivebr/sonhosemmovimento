@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import HomeHero from '../components/HomeHero.astro';
+import NatalLuzBanner from '../components/NatalLuzBanner.astro';
+import CarrosselPasseios from '../components/CarrosselPasseios.astro';
+import CarrosselPasseiosReceptivo from '../components/CarrosselPasseiosReceptivo.astro';
+import Depoimentos from '../components/Depoimentos.astro';
+import FormularioContato from '../components/FormularioContato.astro';
+import Faq from '../components/Faq.astro';
+import Footer from '../components/Footer.astro';
+
+const seoDescription = "Conheça Gramado e Canela com a Sonhos em Movimento. Reserve passeios, translados e ingressos para viver a Serra Gaúcha.";
+const seoKeywords = [
+  "turismo Gramado",
+  "turismo Canela",
+  "translado Gramado",
+  "translado Canela",
+  "ingressos Gramado",
+  "passeios Serra Gaúcha",
+  "Sonhos em Movimento",
+  "Gramado RS",
+  "Canela RS"
+];
+---
+
+<BaseLayout 
+  title="Sonhos em Movimento | Passeios e Translados em Gramado e Canela" 
+  description={seoDescription}
+  keywords={seoKeywords}
+  image="/images/logo_sonhosemmovimento.png"
+>
+  <Header home />
+  
+  <!-- Seção Hero -->
+  <main class="home-content bg-primary-50 dark:bg-dark-900">
+  <HomeHero />
+  
+  <!-- Seção de Passeios e Receptivo -->
+  <section id="passeios">
+    <CarrosselPasseiosReceptivo />
+  </section>
+  
+  <!-- Seção de Ingressos e Atrações -->
+  <NatalLuzBanner />
+
+  <section id="ingressos">
+    <CarrosselPasseios />
+  </section>
+  
+  <!-- Seção Depoimentos -->
+  <section id="depoimentos">
+    <Depoimentos />
+  </section>
+  
+  <!-- Seção Contato -->
+  <section id="contato">
+    <FormularioContato />
+  </section>
+  <Faq />
+  
+  <!-- Footer -->
+  </main>
+  <Footer />
+</BaseLayout>
