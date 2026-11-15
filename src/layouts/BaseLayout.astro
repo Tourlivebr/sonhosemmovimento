@@ -16,7 +16,7 @@ const {
   image = '/images/logo_sonhosemmovimento.png',
   canonical,
   noindex = false,
-  keywords = ['Gramado', 'Canela', 'Serra Gaúcha', 'turismo', 'translado', 'passeios', 'ingressos', 'Passeios Gramado Canela'],
+  keywords = ['Gramado', 'Canela', 'Serra Gaúcha', 'turismo', 'translado', 'passeios', 'ingressos', 'Sonhos em Movimento'],
 } = Astro.props;
 
 // Criar URLs de forma segura
@@ -53,7 +53,7 @@ const ogHeight =
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords.join(', ')} />
-    <meta name="author" content="Passeios Gramado Canela" />
+    <meta name="author" content="Sonhos em Movimento" />
     <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
     <link rel="canonical" href={canonicalURL} />
     
@@ -62,7 +62,7 @@ const ogHeight =
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:site_name" content="Passeios Gramado Canela" />
+    <meta property="og:site_name" content="Sonhos em Movimento" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="es_ES" />
@@ -93,12 +93,12 @@ const ogHeight =
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "TravelAgency",
-      "name": "Passeios Gramado Canela",
+      "name": "Sonhos em Movimento",
       "alternateName": "Guia Turismo Serra Gaúcha",
       "description": description,
       "url": canonicalURL,
       "image": socialImage,
-      "telephone": "+5554993220552",
+      "telephone": "+5551920033127",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Gramado",
@@ -129,7 +129,7 @@ const ogHeight =
       "priceRange": "R$",
       "sameAs": [
         "https://www.instagram.com/passeios_em_gramado_canela",
-        "https://www.facebook.com/serratransfer"
+        "https://www.facebook.com/sonhosemmovimento"
       ]
     })} />
 

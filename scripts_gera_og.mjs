@@ -41,7 +41,7 @@ const H = 630;
     <circle cx="${W / 2}" cy="${H / 2 - 44}" r="${(LOGO_TAM + 130) / 2 + 3}" fill="#1A1A1A" opacity="0.55"/>
     <circle cx="${W / 2}" cy="${H / 2 - 44}" r="${(LOGO_TAM + 130) / 2}" fill="url(#gold)"/>
     <text x="${W / 2}" y="552" text-anchor="middle" font-family="Arial Black, Impact, Arial, sans-serif" font-size="66" font-weight="900" fill="url(#gold)" stroke="#1A1A1A" stroke-width="4" paint-order="stroke">
-      Passeios Gramado Canela
+      Sonhos em Movimento
     </text>
     <text x="${W / 2}" y="600" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" opacity="0.94">
       Gramado &amp; Canela · Serra Gaúcha · RS
