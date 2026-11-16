@@ -17,7 +17,9 @@ const whatsappUrl = 'https://wa.me/5551920033127?text=' + encodeURIComponent(mes
         <span aria-hidden="true">&#8594;</span>
       </a>
     </div>
-
+    <div class="christmas-mascot-wrap">
+      <img class="christmas-mascot" src="/images/mascote_natal.png" alt="Mascote de Natal da Sonhos em Movimento segurando um presente" width="404" height="546" loading="lazy" decoding="async" />
+    </div>
   </div>
 </section>
 
@@ -26,8 +28,10 @@ const whatsappUrl = 'https://wa.me/5551920033127?text=' + encodeURIComponent(mes
   .christmas-background,.christmas-overlay{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
   .christmas-background{object-fit:cover;object-position:center 52%}
   .christmas-overlay{background:linear-gradient(90deg,rgba(0,18,56,.68),rgba(0,18,56,.76) 40%,rgba(0,18,56,.35))}
-  .christmas-content{display:flex;align-items:center;justify-content:space-between;gap:48px;min-height:360px;padding-top:48px;padding-bottom:48px;max-width:1200px}
-  .christmas-copy{max-width:650px}
+  .christmas-content{display:flex;align-items:center;justify-content:space-between;gap:48px;min-height:410px;padding-top:36px;padding-bottom:36px;max-width:1200px}
+  .christmas-copy{position:relative;z-index:1;max-width:650px;flex:1}
+  .christmas-mascot-wrap{align-self:stretch;display:flex;align-items:flex-end;justify-content:center;flex:0 0 300px;max-height:390px;overflow:hidden}
+  .christmas-mascot{display:block;width:100%;height:100%;max-height:390px;object-fit:cover;object-position:center top}
   .christmas-eyebrow{display:flex;align-items:center;gap:10px;color:var(--clr-accent-200);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
   .christmas-eyebrow span{font-size:24px}
   h2{font-size:clamp(30px,3vw,44px);font-weight:700;line-height:1.15;margin:0}
@@ -38,5 +42,5 @@ const whatsappUrl = 'https://wa.me/5551920033127?text=' + encodeURIComponent(mes
   .christmas-button:focus-visible{outline:3px solid var(--clr-accent-200);outline-offset:5px}
   .christmas-button svg{width:24px;height:24px;flex-shrink:0}
   .christmas-button>span{margin-left:4px;font-size:22px}
-  @media(max-width:767px){.christmas-content{flex-direction:column;gap:28px;align-items:stretch;padding:40px 24px}.christmas-copy{text-align:center;margin:auto}.christmas-eyebrow{justify-content:center;font-size:10px;letter-spacing:.08em}h2{font-size:30px}.christmas-description{font-size:14px}.christmas-button{font-size:14px;padding:14px 20px}.christmas-background{object-position:center}.christmas-overlay{background:color-mix(in srgb, var(--clr-primary-950) 72.16%, transparent)}}
+  @media(max-width:767px){.christmas-content{position:relative;min-height:590px;flex-direction:column;gap:20px;align-items:center;justify-content:flex-start;padding:42px 22px 250px}.christmas-copy{width:100%;max-width:470px;text-align:center;margin:0 auto}.christmas-eyebrow{justify-content:center;font-size:10px;letter-spacing:.08em}h2{font-size:30px}h2 span{font-size:1.38em}.christmas-description{font-size:14px;margin:14px 0 19px}.christmas-button{font-size:14px;padding:14px 20px}.christmas-mascot-wrap{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:168px;height:228px;max-height:none;flex:none}.christmas-mascot{height:100%;max-height:none}.christmas-background{object-position:center}.christmas-overlay{background:linear-gradient(180deg,rgba(24,12,7,.72),rgba(24,12,7,.68) 58%,rgba(24,12,7,.36))}}
 </style>
