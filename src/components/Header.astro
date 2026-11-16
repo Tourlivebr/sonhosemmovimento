@@ -226,13 +226,30 @@ const { home = false } = Astro.props;
   import servicos from '../data/busca-servicos.json';
   import ingressosHome from '../data/ingressos-home.json';
 
+  const imagensPasseios: Record<string, string> = {
+    '/passeio/transfer-grande-desfile-de-natal': '/images/grande-desfile-de-natal/desfile-01.webp',
+    '/passeio/transfer-nativitaten': '/images/nativitaten/nativitaten-01.webp',
+    '/passeio/transfer-ida-volta-porto-alegre': '/images/Transfer/transfer.png',
+    '/passeio/city-tour-privativo': '/images/transfer11.jpg',
+    '/passeio/transporte-olivas': '/images/olivas/olivas_card.jpg',
+    '/passeio/transporte-jolimont': '/images/jolimont/jolimont.jpg',
+    '/passeio/transporte-sky-glass': '/images/skyglass/skyglass.jpg',
+    '/passeio/transporte-parque-do-caracol': '/images/Transfer/transfer.png',
+    '/passeio/bondinhos-transporte': '/images/bondinhos.avif',
+    '/passeio/city-tour-nova-petropolis': '/images/Nova_Petropolis.jpg',
+    '/passeio/lumni-transporte': '/images/lumini.webp',
+    '/passeio/maria-fumaca': '/images/maria-fumaca/fumaca01.jpg',
+    '/passeio/tour-vinhos-e-sabores': '/images/jolimont/Jolimont1.png',
+  };
   const todosPasseios = [
-    ...servicos,
+    ...servicos.map(item => ({ ...item, imagem: imagensPasseios[item.href], externo: false })),
     ...ingressosHome.map(item => ({
       titulo: item.titulo,
       subtitulo: item.subtitulo,
       categoria: 'INGRESSOS E ATRAÇÕES',
       href: item.linkOficial,
+      imagem: item.imagem,
+      externo: true,
     })),
   ];
   const normalizeSearch = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -281,11 +298,18 @@ const { home = false } = Astro.props;
     } else {
       resultsContainer.innerHTML = filteredPasseios.map(passeio => {
         const href = passeio.href;
+        const target = passeio.externo ? ' target="_blank" rel="noopener noreferrer"' : '';
+        const image = passeio.imagem
+          ? `<img src="${passeio.imagem}" alt="" class="h-12 w-14 shrink-0 rounded-md object-cover" loading="lazy" />`
+          : `<span class="grid h-12 w-14 shrink-0 place-items-center rounded-md bg-primary-50 text-primary-700" aria-hidden="true">${passeio.externo ? '🎟' : '↗'}</span>`;
         return `
-          <a href="${href}" class="block p-3 hover:bg-dark-50 transition-colors border-b border-dark-100 last:border-b-0">
-            <div class="font-medium text-dark-800">${passeio.titulo}</div>
-            <div class="text-sm text-dark-600">${passeio.subtitulo || ''}</div>
-            <div class="text-xs text-secondary-600 mt-1">${passeio.categoria}</div>
+          <a href="${href}"${target} class="flex items-center gap-3 p-3 hover:bg-dark-50 transition-colors border-b border-dark-100 last:border-b-0">
+            ${image}
+            <span class="min-w-0">
+              <span class="block truncate font-medium text-dark-800">${passeio.titulo}</span>
+              <span class="block truncate text-sm text-dark-600">${passeio.subtitulo || ''}</span>
+              <span class="mt-1 block text-xs text-secondary-600">${passeio.categoria}</span>
+            </span>
           </a>
         `;
       }).join('');

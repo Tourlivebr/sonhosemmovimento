@@ -1,0 +1,54 @@
+---
+const guideMessage = 'Olá! Gostaria de receber o guia em PDF de Gramado e Canela.';
+const passwordMessage = 'Olá! Gostaria de solicitar a senha de acesso ao guia de Gramado e Canela.';
+const whatsapp = (message) => `https://wa.me/5551920033127?text=${encodeURIComponent(message)}`;
+---
+
+<section class="destination-guide" aria-labelledby="destination-guide-title">
+  <div class="destination-guide-background" aria-hidden="true"></div>
+  <div class="destination-guide-content">
+    <div class="destination-guide-copy">
+      <p class="destination-guide-eyebrow">Sua viagem começa com boas ideias</p>
+      <h2 id="destination-guide-title">Gramado e Canela<br />na palma da sua mão</h2>
+      <p class="destination-guide-description">Um guia em PDF com as principais atrações para você planejar os melhores momentos da sua viagem.</p>
+      <div class="destination-guide-actions">
+        <a class="guide-download" href={whatsapp(guideMessage)} target="_blank" rel="noopener noreferrer">
+          Solicitar guia em PDF
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14" /></svg>
+        </a>
+        <a class="guide-whatsapp" href={whatsapp(passwordMessage)} target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.8 9.8 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.4.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z" /></svg>
+          Solicitar senha no WhatsApp
+        </a>
+      </div>
+      <p class="destination-guide-note">Peça o guia e solicite a senha de acesso pelo WhatsApp.</p>
+    </div>
+    <figure class="guide-mascot">
+      <img src="/images/mascoteebook.png" alt="Mascote da Sonhos em Movimento consultando um mapa de Gramado e Canela" width="380" height="546" loading="lazy" decoding="async" />
+    </figure>
+  </div>
+</section>
+
+<style>
+  .destination-guide{position:relative;isolation:isolate;overflow:hidden;width:min(1180px,calc(100% - 40px));min-height:350px;margin:30px auto 48px;border:1px solid color-mix(in srgb,var(--clr-accent-300) 35%,transparent);border-radius:24px;background:var(--clr-primary-950);color:var(--clr-cream-50);box-shadow:0 18px 50px rgba(39,20,11,.18)}
+  .destination-guide-background{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(35,16,10,.94),rgba(45,22,14,.84) 44%,rgba(45,22,14,.38)),url('/images/link_passeios1.jpg') center 48%/cover no-repeat}
+  .destination-guide-content{display:flex;align-items:center;justify-content:space-between;gap:48px;min-height:380px;padding:38px 56px}
+  .destination-guide-copy{max-width:670px;flex:1}
+  .destination-guide-eyebrow{margin:0 0 14px;color:var(--clr-accent-300);font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+  .destination-guide h2{margin:0;font-family:Georgia,serif;font-size:clamp(30px,3vw,42px);font-weight:500;line-height:1.08;letter-spacing:-.02em}
+  .destination-guide-description{max-width:540px;margin:18px 0 22px;color:var(--clr-cream-50);font-size:14px;line-height:1.7}
+  .destination-guide-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+  .destination-guide-actions a{display:inline-flex;min-height:46px;align-items:center;justify-content:center;gap:10px;padding:12px 20px;border:1px solid var(--clr-accent-300);border-radius:999px;font-size:13px;font-weight:700;text-decoration:none;transition:transform .2s,background .2s,color .2s}
+  .destination-guide-actions a:hover{transform:translateY(-2px)}
+  .guide-download{background:var(--clr-accent-400);color:var(--clr-primary-950)}
+  .guide-download:hover{background:var(--clr-accent-300)}
+  .guide-download svg{width:17px;height:17px}
+  .guide-whatsapp{background:rgba(45,22,14,.38);color:var(--clr-cream-50)}
+  .guide-whatsapp:hover{background:var(--clr-primary-800)}
+  .guide-whatsapp svg{width:18px;height:18px}
+  .destination-guide-note{margin:10px 0 0;color:var(--clr-cream-100);font-size:11px}
+  .guide-mascot{flex:0 0 220px;width:220px;height:316px;margin:0;overflow:hidden}
+  .guide-mascot img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+  .destination-guide-actions a:focus-visible{outline:3px solid var(--clr-cream-50);outline-offset:4px}
+  @media(max-width:700px){.destination-guide{width:calc(100% - 24px);min-height:0;margin:24px auto 36px;border-radius:20px}.destination-guide-background{background:linear-gradient(180deg,rgba(35,16,10,.92),rgba(45,22,14,.88) 65%,rgba(45,22,14,.58)),url('/images/link_passeios1.jpg') center/cover no-repeat}.destination-guide-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(112px,36%);align-items:center;gap:10px;min-height:0;padding:28px 18px}.destination-guide-copy{min-width:0;max-width:none}.destination-guide-eyebrow{font-size:9px;letter-spacing:.1em;margin-bottom:10px}.destination-guide h2{font-size:clamp(23px,6vw,30px);line-height:1.08}.destination-guide-description{font-size:11px;line-height:1.5;margin:12px 0 14px}.destination-guide-actions{align-items:stretch;flex-direction:column;gap:8px}.destination-guide-actions a{width:100%;min-height:38px;padding:9px 8px;font-size:10px;line-height:1.2;text-align:center}.guide-download svg{width:14px;height:14px}.guide-whatsapp svg{width:15px;height:15px;flex-shrink:0}.destination-guide-note{font-size:9px;line-height:1.4;margin-top:8px}.guide-mascot{align-self:center;flex:none;width:100%;height:auto;aspect-ratio:380/546}}
+</style>
