@@ -1,62 +1,122 @@
 [
   {
+    "titulo": "O Grande Desfile de Natal",
+    "subtitulo": "Uma noite de música, luzes e personagens natalinos em Gramado.",
+    "imagem": "/images/grande-desfile-de-natal/desfile-01.webp",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/o-grande-desfile-de-natal?bookingAgency=4943"
+  },
+  {
+    "titulo": "Nativitaten",
+    "subtitulo": "Espetáculo de Natal com música, águas dançantes e efeitos especiais.",
+    "imagem": "/images/nativitaten/nativitaten-01.webp",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/nativitaten?bookingAgency=4943"
+  },
+  {
     "titulo": "Lumni",
-    "subtitulo": "Luzes e cenários ao ar livre para curtir uma noite especial em família.",
+    "subtitulo": "Luzes e cenários ao ar livre para curtir uma noite especial.",
     "imagem": "/images/lumini.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/lumni?bookingAgency=5249"
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/lumni?bookingAgency=4943"
   },
   {
-    "titulo": "Vale dos Dinossauros",
-    "subtitulo": "Uma caminhada entre dinossauros em tamanho real e cenários naturais.",
-    "imagem": "https://myjcwvyyspwituevmdeu.supabase.co/storage/v1/object/public/product-images/products/passaporte-grupo-dreams-7-atracoes-gramado-descontos-01.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/vale-dos-dinossauros-canela?bookingAgency=5249"
+    "titulo": "Olivas de Gramado",
+    "subtitulo": "Natureza, experiências e belas paisagens na Serra Gaúcha.",
+    "imagem": "/images/olivas/olivas_card.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/olivas?bookingAgency=4943"
   },
   {
-    "titulo": "Museu de Cera",
-    "subtitulo": "Personagens e celebridades de cera em cenários para suas fotos.",
-    "imagem": "https://myjcwvyyspwituevmdeu.supabase.co/storage/v1/object/public/product-images/products/museu-de-cera-dreamland-super-carros-c-carona-de-porsche-gramado-melhor-preco.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/museu-de-cera?bookingAgency=5249"
+    "titulo": "Acquamotion",
+    "subtitulo": "Diversão aquática para aproveitar em família em qualquer estação.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/acquamotion?bookingAgency=4943"
   },
   {
-    "titulo": "Terra Mágica Florybal",
-    "subtitulo": "Personagens, dinossauros e cenários de fantasia para explorar em família.",
-    "imagem": "https://myjcwvyyspwituevmdeu.supabase.co/storage/v1/object/public/product-images/products/bondinhos-skyglass-jolimont-canela-cupons.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/parque-terra-magica-florybal?bookingAgency=5249"
+    "titulo": "O Brilho do Natal",
+    "subtitulo": "Uma experiência natalina iluminada para toda a família.",
+    "imagem": "/images/natal-luz-banner.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/o-brilho-do-natal?bookingAgency=4943"
   },
   {
-    "titulo": "NBA Park",
-    "subtitulo": "Atrações interativas para conhecer e se divertir com o universo do basquete.",
-    "imagem": "https://myjcwvyyspwituevmdeu.supabase.co/storage/v1/object/public/product-images/products/nba-park-exceed-park-selfie-gramado-gramado-ofertas.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/nba-park?bookingAgency=5249"
-  },
-  {
-    "titulo": "Mini Mundo",
-    "subtitulo": "Um parque ao ar livre repleto de construções e paisagens em miniatura.",
-    "imagem": "https://myjcwvyyspwituevmdeu.supabase.co/storage/v1/object/public/product-images/products/1782739377724-7130z6h0bph.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/mini-mundo?bookingAgency=5249"
+    "titulo": "Bondinhos Canela",
+    "subtitulo": "Um passeio panorâmico com vista para a Cascata do Caracol.",
+    "imagem": "/images/bondinhos.avif",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/bondinhos-canela?bookingAgency=4943"
   },
   {
     "titulo": "Space Adventure",
-    "subtitulo": "Uma viagem pela exploração espacial, com peças da NASA e atividades interativas.",
+    "subtitulo": "Uma viagem pelo universo e pela história da exploração espacial.",
     "imagem": "/images/spaceadventure/space01.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/space-adventure?bookingAgency=5249"
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/space-adventure?bookingAgency=4943"
+  },
+  {
+    "titulo": "Snowland",
+    "subtitulo": "Neve e atrações de inverno para curtir em qualquer época do ano.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/snowland?bookingAgency=4943"
+  },
+  {
+    "titulo": "Parque do Caracol",
+    "subtitulo": "Trilhas e mirantes em meio à natureza de Canela.",
+    "imagem": "/images/skyglass/skyglass.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/parque-do-caracol?bookingAgency=4943"
+  },
+  {
+    "titulo": "Garden Park",
+    "subtitulo": "Jardins e caminhos tranquilos para passear em meio à natureza.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/garden-park?bookingAgency=4943"
   },
   {
     "titulo": "Alpen Park",
     "subtitulo": "Aventura e atrações para a família nas paisagens de Canela.",
-    "imagem": "https://myjcwvyyspwituevmdeu.supabase.co/storage/v1/object/public/product-images/products/1786560810556-ht234z1dif4.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/alpen-park?bookingAgency=5249"
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/alpen-park?bookingAgency=4943"
   },
   {
-    "titulo": "Parque Criamigos",
-    "subtitulo": "Diversão e descobertas em um parque dedicado ao universo dos ursinhos.",
-    "imagem": "https://myjcwvyyspwituevmdeu.supabase.co/storage/v1/object/public/product-images/products/oficina-criamigos-gramado-cupons-02.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/parque-criamigos?bookingAgency=5249"
+    "titulo": "Mini Mundo",
+    "subtitulo": "Um parque ao ar livre repleto de construções em miniatura.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/mini-mundo?bookingAgency=4943"
+  },
+  {
+    "titulo": "Parque Terra Mágica Florybal",
+    "subtitulo": "Personagens, dinossauros e cenários de fantasia para explorar.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/parque-terra-magica-florybal?bookingAgency=4943"
+  },
+  {
+    "titulo": "Passaporte Grupo Dreams – 7 atrações",
+    "subtitulo": "Aproveite sete atrações do Grupo Dreams com um só passaporte.",
+    "imagem": "/images/grupo-dreams-passaporte.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/passaporte-grupo-dreams-7-atracoes?bookingAgency=4943"
+  },
+  {
+    "titulo": "Cristais de Gramado",
+    "subtitulo": "Conheça de perto a arte e a produção de peças em cristal.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/cristais-de-gramado?bookingAgency=4943"
+  },
+  {
+    "titulo": "Aldeia do Papai Noel",
+    "subtitulo": "Um passeio natalino para encontrar o Papai Noel em Gramado.",
+    "imagem": "/images/natal-luz-banner.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/aldeia-do-papai-noel?bookingAgency=4943"
+  },
+  {
+    "titulo": "NBA Park",
+    "subtitulo": "Atrações interativas para entrar no universo do basquete.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/nba-park?bookingAgency=4943"
   },
   {
     "titulo": "Super Carros",
-    "subtitulo": "Uma exposição de carros esportivos para quem é apaixonado por motores.",
-    "imagem": "https://myjcwvyyspwituevmdeu.supabase.co/storage/v1/object/public/product-images/products/super-carros-gramado-cupons-02.webp",
-    "linkOficial": "https://parksnet.com.br/destino/serra-gaucha/super-carros?bookingAgency=5249"
+    "subtitulo": "Uma exposição de carros esportivos para quem ama motores.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/super-carros?bookingAgency=4943"
+  },
+  {
+    "titulo": "Mundo a Vapor",
+    "subtitulo": "Atrações e réplicas que contam a história das máquinas a vapor.",
+    "imagem": "/images/link_ingressos.jpg",
+    "linkOficial": "https://parksnet.com.br/serra-gaucha/mundo-a-vapor?bookingAgency=4943"
   }
 ]
